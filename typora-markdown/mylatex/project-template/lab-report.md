@@ -20,7 +20,7 @@
         <tr style="font-weight:normal;"> 
             <td style="width:20%;text-align:right;">学　　院</td>
             <td style="width:2%">：</td> 
-            <td style="width:30%;font-weight:normal;border-bottom: 1px solid;text-align:center;font-family:华文仿宋"> 计算机学院</td>     </tr>
+            <td style="width:30%;font-weight:normal;border-bottom: 1px solid;text-align:center;font-family:华文仿宋"> 计算机科学与技术学院</td>     </tr>
         <tr style="font-weight:normal;"> 
             <td style="width:20%;text-align:right;">专　　业</td>
             <td style="width:2%">：</td> 
@@ -36,12 +36,9 @@
     </tbody>              
     </table>
 	</br></br></br></br>
-	<p style="text-align:center;font-size:17pt;margin: 0 auto;font-family:华文仿宋">2024 年　3　月　9　日 </p>                       
+	<p style="text-align:center;font-size:17pt;margin: 0 auto;font-family:华文仿宋">2024 年 7 月 1 日 </p>                       
 	</br></br></br></br></br></br></br>
 </div>
-
-
-
 
 <!-- 注释语句：导出PDF时会在这里分页 -->
 
@@ -116,16 +113,17 @@
             <div style="flex:9;text-align:center;border-bottom: 1px solid black;font-family:华文仿宋;display:flex">2024</div>
             <div style="flex:3">
                 年	</div>
-            <div style="flex:6;text-align:right;border-bottom: 1px solid black;font-family:华文仿宋;display:flex">3</div>
+            <div style="flex:6;text-align:right;border-bottom: 1px solid black;font-family:华文仿宋;display:flex">　7</div>
             <div style="flex:3">
                 月	</div>
-            <div style="flex:6;text-align:center;border-bottom: 1px solid black;font-family:华文仿宋;display:flex">9</div>
+            <div style="flex:6;text-align:right;border-bottom: 1px solid black;font-family:华文仿宋;display:flex">　1</div>
             <div style="flex:3">
                 日	</div>
         </div>
 	</div>
 	</br></br></br>
 </div>
+
 
 
 
