@@ -1,0 +1,98 @@
+\documentclass{article}
+
+\usepackage{amsmath}                % 数学公式
+\usepackage{amssymb}                % 数学符号
+\usepackage{array}                  % 表格
+\usepackage{caption}                % 图片标题
+\usepackage{enumerate}              % 列表枚举
+\usepackage{indentfirst}            % 首行缩进
+\usepackage{fontspec}
+\newfontfamily\menlo{Consolas}      % 设置代码字体，代码建议使用 Consolas
+\usepackage{geometry}               % 页边距自定义
+\usepackage{graphics}               % 图片
+\usepackage{graphicx}               % 图片
+\usepackage{listings}               % 原生代码
+\usepackage{mathptmx}               % 数学字体
+\usepackage{multirow}               % 表格中多行单元格操作
+\usepackage{pgfplots}               % 数学绘图
+\usepackage{tcolorbox}              % 代码框上色
+\usepackage{tikz}                   % 绘图
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[UTF8]{ctex}
+\usepackage[T1]{fontenc}            % 如果去掉这一句，XelaTeX编译时无法加粗英文字体
+
+\geometry{a4paper,left=2cm,right=2cm,top=1.5cm,bottom=1.5cm}        % 页边距
+\pgfplotsset{width=8cm, compat=1.13}    % pgf图片大小
+\usetikzlibrary{positioning, shapes.geometric}
+
+\captionsetup[figure]{name={Fig.}}      % 自定义图片标题前缀
+
+
+% lstlisting代码框设置
+\lstset{
+    breaklines,                                 % 自动将长的代码行换行排版
+    extendedchars=false,                        % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+    backgroundcolor=\color[rgb]{0.96,0.96,0.96},% 背景颜色
+    keywordstyle=\color{blue}\bfseries,         % 关键字颜色
+    identifierstyle=\color{black},              % 普通标识符颜色
+    commentstyle=\color[rgb]{0,0.6,0},          % 注释颜色
+    stringstyle=\color[rgb]{0.58,0,0.82},       % 字符串颜色
+    showstringspaces=false,                     % 不显示字符串内的空格
+    %numbers=left,                              % 显示行号
+    numberstyle=\tiny\menlo,                    % 设置数字字体
+    basicstyle=\small\menlo,                    % 设置基本字体
+    captionpos=t,                               % title在上方(在bottom即为b)
+    frame=single,                               % 设置代码框形式
+    rulecolor=\color[rgb]{0.8,0.8,0.8},         % 设置代码框颜色
+}  
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    %------------------------------------------------------------
+    %    Top rules
+    %------------------------------------------------------------
+
+    \rule{\textwidth}{0pt}   % The top horizontal rule
+    \vspace{0.25\textheight}  % Whitespace between top horizontal rule and title
+
+    %------------------------------------------------------------
+    %    Title
+    %------------------------------------------------------------
+
+    {\Huge \textbf{ADS Report}}
+
+    \vspace{0.025\textheight}   % Whitespace between the title and short horizontal rule
+
+    {\fontsize{40}{0}\selectfont \textbf{What Can I Say?}}
+
+    \rule{0.83\textwidth}{0pt}  % The short horizontal rule under title
+
+    \vspace{0.02\textheight}  % Whitespace between the short horizontal rule and author
+
+    %------------------------------------------------------------
+    %    Author
+    %------------------------------------------------------------
+
+    {\Huge Group No.?\\}
+    \vspace{0.02\textheight}
+    {\Huge nenhang\\}
+    \vspace{0.1\textheight}
+
+    %\vfill  % Whitespace between author and date
+    {\huge 2024.?.?}  % Date
+    \vspace{0.1\textheight}  % Whitespace between date and bottom horizontal rule
+
+    %------------------------------------------------------------
+    %    Bottom rules
+    %------------------------------------------------------------
+
+    \rule{\textwidth}{0pt}  % The bottom horizontal rule
+
+  \end{titlepage}
+
+\section{Introduction}
+
+\end{document}
