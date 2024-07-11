@@ -2,7 +2,7 @@
     </br></br></br></br></br></br></br>
     <div style="width:60%;margin: 0 auto;height:0;padding-bottom:10%;">
         </br>
-        <img src="https://raw.githubusercontent.com/Keldos-Li/pictures/main/typora-latex-theme/ZJU-name.svg" alt="校名" style="width:110%;"/>
+        <img src="https://gitee.com/nenhang/Document-Templates/raw/main/typora-markdown/mylatex/project_template/images/zju-name.svg" alt="校名" style="width:110%;"/>
     </div>
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <p style="font-family:方正公文仿宋;text-align:center;font-size:18pt;margin: 0 auto">本科生实验报告 </p>
