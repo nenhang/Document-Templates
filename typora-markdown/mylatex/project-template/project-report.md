@@ -4,9 +4,9 @@
         </br>
         <img src="https://gitee.com/nenhang/Document-Templates/raw/main/typora-markdown/mylatex/project-template/images/zju-name.svg" alt="校名" style="width:110%;"/>
     </div>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    <p style="font-family:方正公文仿宋;text-align:center;font-size:18pt;margin: 0 auto">本科生实验报告 </p>
     </br></br></br></br></br>
-    <p style="font-family:华文中宋;text-align:center;font-size:30pt;margin: 0 auto">本科实验报告 </p>
-    </br></br></br></br></br></br></br></br></br>
     <table style="border:none;margin-left:-1%;text-align:center;width:80%;font-family:仿宋;font-size:16px;">
     <tbody style="font-family:方正公文仿宋;font-size:15pt;">
         <tr style="font-weight:normal;"> 
@@ -42,12 +42,11 @@
 
 
 
-
 <!-- 注释语句：导出PDF时会在这里分页 -->
 
 <div class="cover" style="page-break-after:always;font-family:方正公文仿宋;width:100%;height:100%;border:none;margin: 0 auto;text-align:center;">
     </br></br>
-    <p style="font-family:华文中宋;text-align:center;font-size:24pt;margin: 0 auto">本科生实验报告 </p>
+    <p style="font-family:方正公文仿宋;text-align:center;font-size:18pt;margin: 0 auto">本科生实验报告 </p>
 	</br></br></br>
 	<div style="width:100%;display:flex;text-align:center;justify-content:center;font-size:12pt">
         <div style="flex:5;display:flex">
@@ -126,29 +125,3 @@
 	</div>
 	</br></br></br>
 </div>
-
-
-
-## 实验目的和要求
-
-
-
-## 实验内容和原理
-
-
-　
-
-## 主要仪器设备
-
-
-
-## 操作方法与实验步骤
-
-
-
-## 实验结果与分析
-
-
-
-## 讨论与心得
-
