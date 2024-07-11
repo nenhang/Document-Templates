@@ -13,8 +13,11 @@ LaTeX 的模板在 `latex` 文件夹下，Markdown 的主题和模板在 `markdo
     - 修改了正文字体“家族宋”被解释为楷体的bug；
     - 稍微调整了部分字体的样式。
 
-    对应这个主题，在 `typora-markdown/mylatex/project` 文件夹下有一些报告模板，适用于浙江大学的本科生实验报告、课程设计报告等。
-
+    对应这个主题，在 `typora-markdown/mylatex/project-template` 文件夹下有一些报告模板，适用于浙江大学的本科生实验报告、课程设计报告等。
+    <table><tr>
+        <td><img src=./typora-markdown/mylatex/project-template/cover_examples/lab-report_cover.png border=0></td>
+        <td><img src=./typora-markdown/mylatex/project-template/cover_examples/project-report_cover.png border=0></td>
+    </tr></table>
 ## 使用方法
 
 1. 下载对应的 CSS 文件，放到 Typora 的主题文件夹下；
