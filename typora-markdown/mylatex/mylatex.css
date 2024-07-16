@@ -481,18 +481,21 @@ p code,
 li code { 
   /* 行内代码，原来的实在太丑了
    * 改成github的样式，modified by @nenhang */
-  /* color: #000000;/*#3c70c6;*/
-  background-color: #f8f8f8;/*#fefefe;*/
+  /* color: #000000;/*#3c70c6; 原来的 */
+  /* background-color: #f8f8f8;/*#fefefe; 修改后的 */
   /* 阴影 */
-  /* box-shadow: 0 0 1px 1px #c8d3df; */
-  border: 1px solid #e7eaed;  /* 新增的边框 */
+  /* box-shadow: 0 0 1px 1px #c8d3df; 原来的 */
+  /* border: 1px solid #e7eaed;  /* 新增的边框 修改后的 */
   font-family: var(--code-font), var(--ui-font), monospace;
-  box-sizing: border-box;
+  /* 如果要设置为github样式的行内代码，可以取消下面所有的注释
+   * 现在是设置为LaTeX的行内代码样式，就是没有背景色，modified by @nenhang */
+  /* box-sizing: border-box;
   border-right: 0px;
   margin: 0 2px 0 2px;
-  padding: 0 2px 0 2px;
+  padding: 0 2px 0 2px; */
   /* 圆角 */
-  border-radius: 2px 2px 2px 2px;
+  /* border-radius: 2px 2px 2px 2px; */
+  margin: 0 1px 0 1px; /* 修改后的，为了避免字间距过小或者过大，modified by @nenhang */
 }
 
 /* 代码块样式 */
