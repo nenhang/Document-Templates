@@ -48,7 +48,7 @@
     flex: none(0, 0, auto), auto(1, 1, auto), initial(0, 1, auto)
     有需要可以自行调整 
 -->
-<div class="cover" style="page-break-after:always;font-family:方正公文仿宋;width:100%;height:100%;border:none;margin: 0 auto;text-align:center;">
+<div class="cover" style="page-break-after:auto;font-family:方正公文仿宋;width:100%;height:100%;border:none;margin: 0 auto;text-align:center;">
     </br></br>
     <p style="font-family:华文中宋;text-align:center;font-size:24pt;margin: 0 auto">本科生实验报告 </p>
 	</br></br></br>
