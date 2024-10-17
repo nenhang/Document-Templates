@@ -502,12 +502,12 @@ li code {
 /* 代码块样式 */
 .md-fences,
 .CodeMirror pre {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .CodeMirror-wrap {
   /* padding: 10px; */
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .CodeMirror-code pre {
