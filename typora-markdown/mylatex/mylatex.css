@@ -26,7 +26,7 @@
   /* 本来首选是Latin Modern Mono，应该是一些很老的IDE的字体，有点古板
    * Courier New是Windows自带的等宽字体，但是也有点古板
    * 换成了VS Code的默认字体，也可以试试JetBrains Mono，modified by @nenhang */
-  --code-font: "Consolas", "Courier New", "Latin Modern Mono", "Latin Modern Mono 10";
+  --code-font: "JetBrains Mono", "Consolas", "Courier New", "Latin Modern Mono", "Latin Modern Mono 10";
 
   /* 侧边栏字体 */
   --ui-font: "阿里巴巴普惠体 2.0", "微软雅黑";
@@ -487,6 +487,7 @@ li code {
   /* box-shadow: 0 0 1px 1px #c8d3df; 原来的 */
   /* border: 1px solid #e7eaed;  /* 新增的边框 修改后的 */
   font-family: var(--code-font), var(--ui-font), monospace;
+  font-size: 0.9em; /* 原来是1em，但是对于jetbrains mono来说，1em太大了，modified by @nenhang */
   /* 如果要设置为github样式的行内代码，可以取消下面所有的注释
    * 现在是设置为LaTeX的行内代码样式，就是没有背景色，modified by @nenhang */
   /* box-sizing: border-box;
@@ -495,18 +496,18 @@ li code {
   padding: 0 2px 0 2px; */
   /* 圆角 */
   /* border-radius: 2px 2px 2px 2px; */
-  margin: 0 1px 0 1px; /* 修改后的，为了避免字间距过小或者过大，modified by @nenhang */
+  margin: 0 1.5px 0 1.5px; /* 修改后的，为了避免字间距过小或者过大，modified by @nenhang */
 }
 
 /* 代码块样式 */
 .md-fences,
 .CodeMirror pre {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .CodeMirror-wrap {
   /* padding: 10px; */
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .CodeMirror-code pre {
