@@ -267,14 +267,15 @@ code,
 tt {
     /* added by @nenhang */
     /* github自己的代码字体不太好看，改成Consolas */
-    font-family: Consolas;
+    font-family: JetBrains Mono, Consolas;
     
     border: 1px solid #e7eaed;
     background-color: #f8f8f8;
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
+    /* 改小代码字体，默认是0.9em */
+    font-size: 0.87em;
 }
 
 code {
