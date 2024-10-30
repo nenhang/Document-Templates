@@ -55,7 +55,8 @@ html {
 }
 
 body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    /* 加入了"霞鹜文楷"作为默认中文字体，Open Sans字体依然是默认的首选英文字体, modified by @nenhang */
+    font-family: "Open Sans", "霞鹜文楷", "Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
