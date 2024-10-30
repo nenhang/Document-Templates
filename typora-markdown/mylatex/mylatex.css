@@ -5,9 +5,8 @@
   /* 备选：Times, "Times New Roman" */
   --base-Latin-font: "Latin Modern Roman", "Latin Modern Roman 10", Times;
 
-  /* 这里首选项本来是"家族宋"，但是对应字体安装后，在Windows字体下的名称是"Family Song 常规体"
-   * 因此这里修改为"Family Song 常规体"，modified by @nenhang */
-  --base-Chinese-font: "Family Song 常规体", "宋体-简", "华文宋体", "Noto Serif CJK SC";
+  /* 这里修改了首选项，modified by @nenhang */
+  --base-Chinese-font: "家族宋", "华文宋体", "Noto Serif CJK SC";
   /* 9.5pt是默认字体大小，现在改成了10pt，modified by @nenhang */
   --base-font-size: 10pt;
 
@@ -24,15 +23,14 @@
   /* "Consolas" 从 Windows Vista 起成为 Windows 官方提供的字体 */
 
   /* 本来首选是Latin Modern Mono，应该是一些很老的IDE的字体，有点古板
-   * Courier New是Windows自带的等宽字体，但是也有点古板
-   * 换成了VS Code的默认字体，也可以试试JetBrains Mono，modified by @nenhang */
+   * Courier New是Windows自带的等宽字体，但是也有点古板，modified by @nenhang */
   --code-font: "JetBrains Mono", "Consolas", "Courier New", "Latin Modern Mono", "Latin Modern Mono 10";
 
   /* 侧边栏字体 */
-  --ui-font: "阿里巴巴普惠体 2.0", "微软雅黑";
+  --ui-font: "微软雅黑";
   /* source mode 字体 */
   /* 默认调用 code-font 和 ui-font */
-  --sourceMode-font: "SF Mono", "阿里巴巴普惠体 2.0", "微软雅黑";
+  --sourceMode-font: "JetBrains Mono", "微软雅黑";
   /* 目录字体 */
   /* 默认调用 base-font */
   --toc-font: "";
