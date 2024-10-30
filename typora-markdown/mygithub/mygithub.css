@@ -266,7 +266,7 @@ table td:last-child {
 code,
 tt {
     /* added by @nenhang */
-    /* github自己的代码字体不太好看，改成Consolas */
+    /* github自己的代码字体不太好看 */
     font-family: JetBrains Mono, Consolas;
     
     border: 1px solid #e7eaed;

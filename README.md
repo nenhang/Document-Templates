@@ -1,4 +1,4 @@
-# ZJU 报告模板
+# ZJU 报告模板 (LaTeX & Markdown)
 
 ## 主要内容
 
