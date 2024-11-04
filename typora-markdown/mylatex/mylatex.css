@@ -83,6 +83,10 @@
   /* 超链接颜色 */
   --link-color-light: #2E67D3;
   --link-color-dark: #8bb1f9;
+  /* == 二级标题强制分页 == */
+  /* 默认值为 auto */
+  /* 更改为 page 启用强制分页 */
+  --page-break-before-h2: auto;
 }
 
 body {
@@ -95,10 +99,14 @@ body {
   #write {
     padding: 0 !important;
   }
-
+  h2 {
+    break-before: var(--page-break-before-h2);
+  }
+  h2:first-of-type {
+    break-before: avoid-page;
+  }
   @page {
-    margin: 1.8cm 2cm 1.2cm 2cm !important;
-    /* 页边距 */
+    margin: 1.8cm 2cm 1.2cm 2cm !important; /* 页边距 */
   }
 }
 #write {
@@ -142,7 +150,7 @@ hr {
 
 img {
   /* 避免图片在导出时被断开 */
-  page-break-inside: avoid;
+  break-inside: avoid-page;
 }
 
 strong {
@@ -169,25 +177,28 @@ strong {
 }
 
 /* 侧边大纲标题 */
+.sidebar-content {
+  counter-reset: outline-h1 outline-h2 outline-h3 outline-h4 outline-h5 outline-h6;
+}
 .sidebar-content .outline-h1 {
-  counter-reset: outline-h2;
+  counter-reset: outline-h2 outline-h3 outline-h4 outline-h5 outline-h6;
 }
 .sidebar-content .outline-h2 {
-  counter-reset: outline-h3;
+  counter-reset: outline-h3 outline-h4 outline-h5 outline-h6;
 }
 .sidebar-content .outline-h2 .outline-label:before {
   counter-increment: outline-h2;
   content: counter(outline-h2) " ";
 }
 .sidebar-content .outline-h3 {
-  counter-reset: outline-h4;
+  counter-reset: outline-h4 outline-h5 outline-h6;
 }
 .sidebar-content .outline-h3 .outline-label:before {
   counter-increment: outline-h3;
   content: counter(outline-h2) "." counter(outline-h3) "  ";
 }
 .sidebar-content .outline-h4 {
-  counter-reset: outline-h5;
+  counter-reset: outline-h5 outline-h6;
 }
 .sidebar-content .outline-h4 .outline-label:before {
   counter-increment: outline-h4;
@@ -239,7 +250,7 @@ h6.md-focus:before {
 }
 
 #write {
-  counter-reset: h2 0 h3 0 h4 0 h5 0 h6 0;
+  counter-reset: h2 h3 h4 h5 h6;
 }
 #write h1,
 #write h2,
@@ -248,7 +259,7 @@ h6.md-focus:before {
 #write h5,
 #write h6 {
   font-weight: bold;
-  page-break-after: avoid !important;
+  break-after: avoid-page !important;
 }
 #write h1 {
   font-family: var(--heading-Latin-font), var(--title-Chinese-font), serif;
@@ -282,48 +293,47 @@ h6.md-focus:before {
   line-height: var(--h5-font-size);
 }
 #write h1 {
-  counter-reset: h2;
+  counter-reset: h2 h3 h4 h5 h6;
 }
 #write h2 {
-  counter-reset: h3;
+  counter-reset: h3 h4 h5 h6;
 }
 #write h3 {
-  counter-reset: h4;
+  counter-reset: h4 h5 h6;
 }
 #write h4 {
-  counter-reset: h5;
+  counter-reset: h5 h6;
 }
 #write h5 {
   counter-reset: h6;
 }
-
-#write h2:before {
-  counter-increment: h2;
+#write h2:before, h2.md-focus.md-heading:before {
   content: counter(h2);
+  counter-increment: h2;
   margin-right: 1.2em;
 }
 
 #write h3:before, h3.md-focus.md-heading:before {
-  counter-increment: h3;
   content: counter(h2) "." counter(h3);
+  counter-increment: h3;
   margin-right: 1.2em;
 }
 
 #write h4:before, h4.md-focus.md-heading:before {
-  counter-increment: h4;
   content: counter(h2) "." counter(h3) "." counter(h4);
+  counter-increment: h4;
   margin-right: 1.2em;
 }
 
 #write h5:before, h5.md-focus.md-heading:before {
-  counter-increment: h5;
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5);
+  counter-increment: h5;
   margin-right: 1.2em;
 }
 
 #write h6:before, h6.md-focus.md-heading:before {
-  counter-increment: h6;
   content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6);
+  counter-increment: h6;
   margin-right: 1.2em;
 }
 
@@ -337,50 +347,50 @@ h6.md-focus:before {
 }
 .footnotes-area hr {
   border: 0;
-  color: #00000000;
+  color: rgba(0, 0, 0, 0);
 }
 
 /* 无序列表 */
-ul {
+#write ul {
   list-style: disc;
 }
-ul ul {
+#write ul ul {
   /*list-style: circle;*/
   /* 请勿删除“–”后的空格, 他们对缩进有一定影响, 下同 */
   list-style: "–   ";
 }
-ul ul ul {
+#write ul ul ul {
   list-style: "◦  ";
 }
 
 /* 有序列表 */
-ol {
+#write ol {
   list-style: decimal;
 }
-ol ol {
+#write ol ol {
   counter-reset: liist;
   list-style: none;
 }
-ol ol li {
+#write ol ol > li {
   counter-increment: liist;
   position: relative;
 }
-ol ol li::before {
-  content: "(" counter(liist,lower-alpha) ")";
+#write ol ol > li::before {
+  content: "(" counter(liist, lower-alpha) ")";
   position: absolute;
   left: -1.8em;
 }
-ol ol ol {
+#write ol ol ol {
   counter-reset: liiist;
   list-style: none;
   margin: 0;
 }
-ol ol ol li {
+#write ol ol ol > li {
   counter-increment: liiist;
   position: relative;
 }
-ol ol ol li::before {
-  content: counter(liiist,lower-roman) ".";
+#write ol ol ol > li::before {
+  content: counter(liiist, lower-roman) ".";
   align-self: flex-end;
   position: absolute;
   left: -4.5em;
@@ -392,12 +402,20 @@ ol ol ol li::before {
   text-align: right;
 }
 
-li {
-  position: relative;
+#write ol,
+#write ul {
+  padding-inline-start: 2em;
 }
 
-ol, ul {
-  padding-inline-start: 2em;
+#write li {
+  position: relative;
+}
+#write li + li,
+#write ul + ol > li,
+#write ol + ul > li,
+#write li > ul > li,
+#write li > ol > li {
+  margin-top: -0.8em;
 }
 
 /* task列表 */
@@ -416,7 +434,7 @@ ol, ul {
   font-family: var(--table-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
   /* font-size: var(--base-font-size); */
   text-align: center;
-  page-break-inside: avoid;
+  break-inside: avoid-page;
   border-spacing: 6px;
   /* 自动布局表格宽度，如果有时内容太紧建议直接加空格吧，我自己看不惯和页面等宽的大表格 */
   width: auto;
@@ -453,16 +471,8 @@ blockquote {
   margin-left: 0;
 }
 
-blockquote p:first-child {
-  padding-top: 1ch;
-}
-
-blockquote p:last-child {
-  padding-bottom: 1ch;
-}
-
 blockquote blockquote {
-  border-left: 4px solid #b3b3b3;
+  border-left: 4px solid hsl(0, 0%, 70%);
   padding-left: calc(2ch - 4px);
   padding-right: 0;
   margin-left: -4px;
@@ -499,16 +509,14 @@ li code {
 
 /* 代码块样式 */
 .md-fences,
-.CodeMirror pre {
-  font-size: 0.95em;
-}
-
+.CodeMirror pre,
 .CodeMirror-wrap {
   /* padding: 10px; */
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
-.CodeMirror-code pre {
+.CodeMirror-code pre,
+.CodeMirror-sizer {
   font-family: var(--code-font), var(--ui-font), monospace;
 }
 
@@ -521,7 +529,7 @@ li code {
   margin-left: 2em;
   /* 修复缺失上级标题时无法递增 */
   counter-reset: toc-h2 toc-h3 toc-h4;
-  page-break-after: always;
+  break-after: page;
 }
 
 .md-toc-inner {
@@ -550,16 +558,16 @@ li code {
 /* 目录标题前 */
 .md-toc-content .md-toc-h1 {
   display: var(--toc-show-title);
-  counter-reset: toc-h2;
+  counter-reset: toc-h2 toc-h3 toc-h4 toc-h5 toc-h6;
 }
 .md-toc-content .md-toc-h2 {
-  counter-reset: toc-h3;
+  counter-reset: toc-h3 toc-h4 toc-h5 toc-h6;
 }
 .md-toc-content .md-toc-h3 {
-  counter-reset: toc-h4;
+  counter-reset: toc-h4 toc-h5 toc-h6;
 }
 .md-toc-content .md-toc-h4 {
-  counter-reset: toc-h5;
+  counter-reset: toc-h5 toc-h6;
 }
 .md-toc-content .md-toc-h5 {
   counter-reset: toc-h6;

@@ -2,7 +2,7 @@
 
 ## 主要内容
 
-LaTeX 的模板在 `latex` 文件夹下，Markdown 的主题和模板在 `markdown` 文件夹下。由于 LaTeX 每个学院基本上都有自己的毕设或者答辩的模板，这里就不怎么提供了。这里的 Markdown 主题都是我在已有主题的基础上修改的，主要是为了适应自己的需求；修改的地方都用`@nenhang`标注了。
+LaTeX 的模板在 `latex` 文件夹下，Markdown 的主题和模板在 `markdown` 文件夹下。由于 LaTeX 每个学院基本上都有自己的毕设或者答辩的模板，这里就不多提供了。这里的 Markdown 主题都是我在已有主题的基础上修改的，主要是为了适应自己的需求；修改的地方都用`@nenhang`标注了。
 
 - [x] [mygithub 主题](typora-markdown/mygithub/mygithub.css) 
     这个主题是我在 Typora 自带的 GitHub 主题上修改的，可作为 Github 主题的中文平替，适合用作做笔记的主题。主要做了如下方面的修改：
@@ -27,4 +27,8 @@ LaTeX 的模板在 `latex` 文件夹下，Markdown 的主题和模板在 `markdo
 ## 使用方法
 
 1. 下载对应的 CSS 文件，放到 Typora 的主题文件夹下；
-2. 安装仓库中主题文件夹和模板文件夹下的`fonts`文件夹中的字体，具体版权和来源可以参考相应文件夹下的`README.md`文件；少数几个字体是我自己添加的，如 **Consolas**，**方正公文仿宋**等，剩下的字体中，除了系统自带的字体外，我唯一没有提供的是 **JetBrains Mono** 和 **霞鹜文楷**，因为它们是一直在更新的，所以我没有提供 fonts 文件，大家可以自行到[JetBrains官网](https://www.jetbrains.com/lp/mono/)和[霞鹜文楷官方仓库](https://github.com/lxgw/LxgwWenKai/releases)下载；
+2. 安装仓库中主题文件夹和模板文件夹下的`fonts`文件夹中的字体，具体版权和来源可以参考相应文件夹下的`README.md`文件；少数几个字体是我自己添加的，如 **Consolas**，**方正公文仿宋**等，剩下的字体中，除了系统自带的字体外，我没有提供的是 **JetBrains Mono** 和 **霞鹜文楷**，因为它们是一直在更新的，所以我没有提供 fonts 文件，大家可以自行到[JetBrains官网](https://www.jetbrains.com/lp/mono/)和[霞鹜文楷官方仓库](https://github.com/lxgw/LxgwWenKai/releases)下载；
+
+## 注意事项
+
+我目前只在 Windows 平台下使用过这些主题，无法保证在其他平台下的兼容性；使用过程中如果发现了什么bug或者有什么建议，欢迎提 issue 或者 PR。走过路过的同学如果觉得这个仓库对你有帮助，欢迎点个 star，这是对我最大的鼓励。
