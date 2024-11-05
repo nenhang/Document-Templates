@@ -512,7 +512,7 @@ li code {
 .CodeMirror pre,
 .CodeMirror-wrap {
   /* padding: 10px; */
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 .CodeMirror-code pre,
