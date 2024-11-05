@@ -4,7 +4,7 @@
     <p style="font-family:Times New Roman;text-align:center;font-size:25pt;font-weight:bold;margin: 0 auto">Roll Your Own Mini Search Engine </p>
     <div style="width:60%;margin: 0 auto;height:0;padding-bottom:10%;">
         </br></br>
-        <img src="https://gitee.com/nenhang/Document-Templates/raw/main/typora-markdown/mylatex/project-template/images/zju-logo.svg" alt="校徽" style="width:70%;"/>
+        <img src="https://gitee.com/nenhang/ZJU-report-templates/raw/main/typora-markdown/mylatex/project-template/images/zju-logo.svg" alt="校徽" style="width:70%;"/>
     </div>
     </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
     <p style="font-family:Times New Roman;text-align:center;font-size:20pt;font-weight:bold;margin: 0 auto">ADS Group 2</p>
